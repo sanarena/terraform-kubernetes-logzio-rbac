@@ -9,3 +9,13 @@ The logzio-k8s image comes pre-configured for Fluentd to gather all logs from th
 This terraform module is developed based on https://docs.logz.io/shipping/log-sources/kubernetes.html
 
 It is tested with AWS EKS v1.18 and Terraform v0.14.3
+
+#### To use this module:
+```
+module "logzio-rbac" {
+  source  = "sanarena/logzio-rbac/kubernetes"
+  version = "1.0.1"
+  logzio_listener = "listener-nl.logz.io"
+  logzio_token = "--Your-Account-Token--"
+}
+```
