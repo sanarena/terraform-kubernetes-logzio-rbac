@@ -1,4 +1,4 @@
-** Ship rbac-based Kubernetes logs to logz.io using a Fluentd DaemonSet via Terraform
+## Ship rbac-based Kubernetes logs to logz.io using a Fluentd DaemonSet via Terraform
 
 Fluentd is an Open Source data collector that can be used to forward logs to Logz.io.
 
